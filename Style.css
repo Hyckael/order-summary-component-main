@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Red+Hat+Display:wght@500&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    background:  hsl(225, 100%, 98%);
+    Font-size : 16px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url(./images/pattern-background-desktop.svg);
+    background-position: start;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.card {
+    height: 40rem;
+    width: 24rem;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+.cardContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.images {
+    background: url(./images/illustration-hero.svg);
+    background-position: center;
+    background-size: cover;
+    height: 24rem;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+
+}
+span {
+    color: hsl(229, 23%, 23%);
+    font-weight: bold;
+}
+.textCont {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.texte{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.texte .desc{
+    line-height: 1.5em;
+    width: 85%;
+}
+.texte p{
+    padding-bottom: 8%;
+}
+h2{
+    padding-top: 20px;
+    padding-bottom: 5%;
+    font-size: 28px;
+}
+p {
+    color: hsl(227, 10%, 46%);
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 16px;
+}
+.price{
+    background: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    height: 30%;
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    gap: 5px;
+}
+.price img{
+    padding-left: 12px;
+}
+.button-Texte{
+    padding-top: 5%;
+    padding-bottom: 30px;
+}
+.button-Texte #Cancel{
+    padding-top: 20px;
+    cursor: pointer;
+}
+.button-Texte #Cancel:hover{
+    color: black;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.price a{
+    color: hsl(245, 75%, 52%);
+    padding-left: 22px;
+}
+.price a:hover{
+    color: hsl(224, 23%, 55%);
+}
+.Text-color{
+    box-shadow: 1px 5px 12px hsl(245, 47%, 51%);
+    background: hsl(245, 75%, 52%); 
+    border-radius: 10px;
+    border: none;
+    width: 20rem;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+    padding-bottom: 10px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+.Text-color:hover{
+    opacity: .8; 
+}
+
+.Text-color p{
+    color: #fff;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+}
+footer .attribution{
+    font-size: 15px;
+    text-align: center;
+}
+.attribution a{
+    text-decoration: none;
+    color: hsl(223, 91%, 50%);
+}
+ a:hover{
+    color: hsla(276, 66%, 28%, 0.836);
+    text-decoration: none;
+    transition-duration: .5s;
+}
+
+ @media (max-width:1430px) {
+    main {
+        height: 120vh;
+        width: 100%;
+      }
+    .card {
+        height: 40rem;
+        width: 21rem;
+      }
+    .images{
+        height: 20rem;
+    }
+    .price{
+        height: 25%;
+    }
+ }
